@@ -1,12 +1,15 @@
 import random
 
+# Ask the user for their name.
 name = input("Hi, please enter your name: ")
 
 print("Hi", name, "Let us play the game of guessing the number.")
 guess_count = 0
 
+# Generate a random number between 1 and 10.
 random_number = random.randint(1, 11)
 
+# Function to guess the number.
 def guess_a_number():
     global guess_count
 
@@ -24,7 +27,8 @@ def guess_a_number():
         if your_number == random_number:
             print("Congrats")
             break
-
+    
+    # Count the total number of guesses you made
     print("You took", guess_count, "number of guesses")
 
 guess_a_number()
