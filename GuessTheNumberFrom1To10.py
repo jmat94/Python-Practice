@@ -29,6 +29,9 @@ def guess_a_number():
             break
     
     # Count the total number of guesses you made
-    print("You took", guess_count, "number of guesses")
+    if guess_count == 1:
+        print("You got it in 1 guess")
+    else:
+        print("You took", guess_count, "number of guesses")
 
 guess_a_number()
