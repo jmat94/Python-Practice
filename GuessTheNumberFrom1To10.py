@@ -3,7 +3,7 @@ import random
 # Ask the user for their name.
 name = input("Hi, please enter your name: ")
 
-print("Hi", name, "Let us play the game of guessing the number.")
+print("Hi", name, "let us play the game of guessing the number.")
 guess_count = 0
 
 # Generate a random number between 1 and 10.
