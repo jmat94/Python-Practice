@@ -16,7 +16,7 @@ def check_prime(num):
                 return False
         return True
 
-# Testing the function and checking the time taken by 1000 numbers
+# Testing the function for the first 1000 numbers and checking the time taken.
 t0 = time.time()
 for i in range(2, 1000):
     print(check_prime(i))
