@@ -1,8 +1,13 @@
+# Finding prime numbers using the method of finding the maximum divisor of the number to reduce the time taken.
+
 import time
 import math
 
+# Creating the function 
 def check_prime(num):
+    # This line code finds the maximum divisor of the number
     max_divisor = math.floor(math.sqrt(num))
+    
     if num == 1:
         return False
     else:
@@ -11,6 +16,7 @@ def check_prime(num):
                 return False
         return True
 
+# Testing the function and checking the time taken by 1000 numbers
 t0 = time.time()
 for i in range(2, 1000):
     print(check_prime(i))
