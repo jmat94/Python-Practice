@@ -1,7 +1,7 @@
 def binary_search(arr, left, right, num):
     while left <= right:
 
-        mid_element = int(left + (right - left)/2)
+        mid_element = int((left + right)/2)
 
         if arr[mid_element] > num:
             right = mid_element - 1
