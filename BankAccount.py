@@ -24,16 +24,26 @@ class BankAccount():
         
       
     # Method to withdra from whatever funds are available
-    def withdraw(self, amount_to_withdraw):
-
+        def withdraw(self):
 
         time.sleep(2)
         print('The total amount of money you have is {}'.format(self.balance))
 
+        time.sleep(2)
+        print('You can withdraw from {}'.format(self.balance))
+
+        amount_to_withdraw = int(input("Enter the amount you want to withdraw: "))
+
         if self.balance < amount_to_withdraw:
             print('Funds Unavailable.')
-        else:
-            print('you can withdraw from {}'.format(self.balance))
+
+
+        if self.balance >= amount_to_withdraw:
+            self.balance = self.balance - amount_to_withdraw
+
+            time.sleep(2)
+            print("The amount you have remaining is {}".format(self.balance))
+
 
 
 # Object creation
@@ -51,7 +61,7 @@ print('And your total is {}'.format(acct2.balance))
 
 
 time.sleep(2)
-acct2.withdraw(int(input('Enter the amount you want to withdraw: ')))
+acct2.withdraw()
 
 
 
