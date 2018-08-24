@@ -54,12 +54,13 @@ acct2 = BankAccount('Jordan', 150)
 # print(acct1.balance)
 # acct1.acc_info()
 
+# Calling deposit method
 acct2.deposit(50)
 
 time.sleep(2)
 print('And your total is {}'.format(acct2.balance))
 
-
+# Calling withdraw method
 time.sleep(2)
 acct2.withdraw()
 
