@@ -25,7 +25,6 @@ def collatz_conjecture(num):
         # return True
     # return False
 
-# print("The numbber of steps are: ", collatz_conjecture(22))
 print(collatz_conjecture(7))
 
 
