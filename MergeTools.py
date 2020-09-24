@@ -9,6 +9,8 @@ def getSubString(string, num):
     """
 
 
+
+
     temp_value = 0
     new_arr = []
 
